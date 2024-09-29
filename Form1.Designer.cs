@@ -33,6 +33,7 @@
             AddTask = new Button();
             listBox1 = new ListBox();
             textBox1 = new TextBox();
+            dateTimePicker1 = new DateTimePicker();
             SuspendLayout();
             // 
             // MurkAsComplete
@@ -79,10 +80,16 @@
             // textBox1
             // 
             textBox1.Location = new Point(524, 170);
-            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(333, 366);
+            textBox1.Size = new Size(333, 27);
             textBox1.TabIndex = 3;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(524, 213);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(333, 27);
+            dateTimePicker1.TabIndex = 4;
             // 
             // Form1
             // 
@@ -90,6 +97,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Bisque;
             ClientSize = new Size(869, 548);
+            Controls.Add(dateTimePicker1);
             Controls.Add(textBox1);
             Controls.Add(listBox1);
             Controls.Add(AddTask);
@@ -107,5 +115,6 @@
         private Button AddTask;
         private ListBox listBox1;
         private TextBox textBox1;
+        private DateTimePicker dateTimePicker1;
     }
 }
